@@ -1,0 +1,4 @@
+package com.blog.innofree.config.jwt;
+
+public class TokenProviderTest {
+}

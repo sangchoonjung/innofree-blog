@@ -1,0 +1,7 @@
+package com.blog.innofree.controller.security;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+class TokenApiControllerTest {
+
+}
