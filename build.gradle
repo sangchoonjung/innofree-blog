@@ -12,6 +12,10 @@ java {
 		languageVersion = JavaLanguageVersion.of(17)
 	}
 }
+// plain.jar 제외
+jar {
+	enabled = false
+}
 
 repositories {
 	mavenCentral()
