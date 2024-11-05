@@ -46,7 +46,7 @@ jobs:
           environment_name: blog-env
           version_label: github-action-${{ steps.current-time.outputs.formattedTime }}
           region: ap-northeast-2
-          deployment_package: ./build/libs/${{ env.artifact }}
+          deployment_package: ${{ env.artifact }}
 
       - name: Run tests with Gradle
         run: ./gradlew clean test --info
