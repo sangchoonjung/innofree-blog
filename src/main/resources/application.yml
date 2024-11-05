@@ -20,11 +20,9 @@ spring:
       client:
         registration:
           google:
-            client-id: test_id
-            client-secret: test_secret
-            scope:
-              - email
-              - profile
+            client-id: ${SPRING_SECURITY_OAUTH2_CLIENT_REGISTRATION_GOOGLE_CLIENT_ID}
+            client-secret: ${SPRING_SECURITY_OAUTH2_CLIENT_REGISTRATION_GOOGLE_CLIENT_SECRET}
+            scope: ${SPRING_SECURITY_OAUTH2_CLIENT_REGISTRATION_GOOGLE_SCOPE}
 jwt:
   issuer: innofree@gmail.com
   secret_key: test_key
